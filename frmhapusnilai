@@ -1,0 +1,12 @@
+<?php 
+include "koneksi.php";
+// Hapus Data Dari input_nilai
+$sql = "DELETE FROM nilai WHERE no_induk = '".$_GET[no_induk]."'";
+$hapus = mysql_query($sql);
+// Tampilkan pesan jika data berhasil di hapus
+if ($sql){
+echo "<script>alert('Data Berhasil di Hapus'); window.location = 'input_nilai.php';</script>";
+} else {
+echo "<script>alert('Gagal di Hapus'); window.location = 'input_nilai.php';</script>";
+}
+?>

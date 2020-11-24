@@ -1,0 +1,81 @@
+body{
+background: #3333CC;
+}
+
+label {
+font-size: 12px;
+font-family: arial, sans-serif;
+list-style-type: none;
+color: #FFFFF;
+text-shadow: #000 1px 1px;
+margin-bottom: 5px;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+display: block;
+}
+
+form {
+width: 201px;
+padding: 20px;
+margin:150px auto;
+border: 2px solid #FFFFFF;
+
+/*** Membuat tepi menjadi rounded ***/
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+
+/*** Membuat bayangan di belakang box ***/
+-moz-box-shadow:0px -5px 300px #FFFFFF;
+-webkit-box-shadow:0px -5px 300px #FFFFFF;
+
+/*** Membuat Warna Gradient Pada Background - 2 Deklarasi : 1.Firefox 2.Webkit(Chrome dan Safari) ***/
+background: -moz-linear-gradient(19% 75% 90deg,#3333CC, #3333CC);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3333CC), to(#3333CC));
+}
+input {
+width: 200px;
+padding: 6px;
+margin-bottom: 10px;
+border-top: 1px solid #ad64e0;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+background: #8a33c6;
+
+/*** Transition Selectors - Bagian apa yang akan beranimasi dan berapa lama ***/
+-webkit-transition-property: -webkit-box-shadow, background;
+-webkit-transition-duration: 0.25s;
+
+/*** Menambahkan bayangan ***/
+-moz-box-shadow: 0px 0px 2px #000;
+-webkit-box-shadow: 0px 0px 2px #000;
+}
+
+input:hover {
+-webkit-box-shadow: 0px 0px 4px #000;
+background: #9d39e1;
+}
+input.submit {
+width: 10px;
+color: #fff;
+text-transform: uppercase;
+text-shadow: #000 1px 1px;
+border-top: 1px solid #ad64e0;
+margin-top: 10px;
+
+/*** Menambah CSS3 Gradients ***/
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#963AD6), to(#781bb9));
+background: -moz-linear-gradient(19% 75% 90deg,#4E0085, #963AD6);
+}
+
+input.submit:hover {
+-webkit-box-shadow: 0px 0px 2px #000;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#963AD6), to(#781bb9));
+background: -moz-linear-gradient(19% 75% 90deg,#781bb9, #963AD6);
+}
+
+input.submit:active {
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#781bb9), to(#963AD6));
+background: -moz-linear-gradient(19% 75% 90deg,#963AD6, #781bb9);
+}
